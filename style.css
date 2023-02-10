@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    
+}
+
+.conteiner{
+    width: 80%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.cards{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.cardFrente{
+    width: 70%;
+    height: 48%;
+    background-image: url(./images/bg-card-front.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Space Grotesk';
+    padding: 24px;
+}
+.logo{
+    width: 20%;
+}
+
+.textCardFrente{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    justify-content: space-between;
+}
+
+.numberCardFrente{
+    font-size: 28px;
+    letter-spacing: 4px;
+    margin-top: 8px;
+}
+
+.nomeCarFrente{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 10pt;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+
+}
+
+.cardVerso{
+    width: 70%;
+    height: 46%;
+    margin-left: 130px;
+    background-image: url(./images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 9%;
+    padding-bottom: 4px;   
+}
+
+.textCardVerso{
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Space Grotesk';
+} 
+/* Completed state start */
+.state{
+    width: 32%;
+    height: 48%;
+    font-family: 'Space Grotesk';
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 28px;
+}
+.imgstate{
+    width: 30%;
+}
+.textstate{
+    text-transform: none;
+    color: hsl(279, 6%, 55%);
+}
+
+.botaoState{
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Space Grotesk';
+    letter-spacing: 1px;
+}
+/* FIM Completed state start */
+
+.form{
+    width: 32%;
+    height: 68%;
+    font-family: 'Space Grotesk';
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 28px;
+}
+.erro{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 2px;
+    visibility: hidden;
+    
+}
+
+.erroFormat{
+    color: hsl(0, 100%, 66%);
+    text-transform: none;
+    margin-bottom: 16px; 
+    
+}
+
+input{
+    height: 38px;
+    border: 1px solid hsl(279, 6%, 55%);
+    border-radius: 8px;
+    padding: 8px;
+    font-family: 'Space Grotesk';
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: hsla(0, 2%, 74%, 0.745);
+}
+
+.lineInput{
+    width: 100%;
+    display: flex;
+    column-gap: 12px;
+}
+
+.titleInput{
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.textInput{
+    width: 50%;
+}
+
+.data{
+    width: 23% ;
+}
+
+.cvc{
+    width: 54%;
+}
+
+.formatErro{
+    width: 50%;
+    color: hsl(0, 100%, 66%);
+    text-transform: none;
+    margin-bottom: 16px;
+    
+}
+
+.botao{
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Space Grotesk';
+    letter-spacing: 1px;
+
+}
+
+.attribution{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 8px;
+    font-size: 13px; 
+    text-align: center; 
+    color: hsl(217, 19%, 35%);
+    font-family: 'Space Grotesk';
+    font-weight: 700;
+}
